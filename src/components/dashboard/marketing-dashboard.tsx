@@ -15,7 +15,7 @@ const Legend = dynamic(() => import('recharts').then(mod => mod.Legend), { ssr: 
 const Cell = dynamic(() => import('recharts').then(mod => mod.Cell), { ssr: false });
 const ResponsiveContainer = dynamic(() => import('recharts').then(mod => mod.ResponsiveContainer), { ssr: false });
 
-const MarketingDashboard = () => {
+function MarketingDashboard() {
   const [dateRange, setDateRange] = useState({
     current: { start: '', end: '' },
     previous: { start: '', end: '' }
